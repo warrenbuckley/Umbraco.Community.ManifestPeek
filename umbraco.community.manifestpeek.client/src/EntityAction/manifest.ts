@@ -4,13 +4,13 @@ export const manifest: Array<ManifestEntityAction> = [
 	{
 		type: 'entityAction',
         kind: 'default',
-		alias: 'warren',
-		name: 'WARREN',
+		alias: 'Umb.Community.ManifestPeek.EntityAction',
+		name: 'Umbraco Community ManifestPeek EntityAction',
 		api: () => import('./manifestpeek.entityaction.js'),
 		forEntityTypes: ['extension'],
         weight: 1000,
 		meta: {
-			label: 'AB Manifest',
+			label: 'View Manifest',
             icon: 'icon-code'
 		},
 	},
