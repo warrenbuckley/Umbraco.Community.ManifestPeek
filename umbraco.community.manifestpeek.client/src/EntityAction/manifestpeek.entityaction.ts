@@ -26,9 +26,13 @@ export class ManifestPeekEntityAction extends UmbEntityActionBase<never> {
         console.log('extension', extension); 
 
         const modal = this._modalManagerContext?.open(this, UMB_CODE_EDITOR_MODAL, {
+            modal: {
+                size: "medium",
+                type: "sidebar"
+            },
             data: {
                content: JSON.stringify(extension, null, 4),
-               headline: 'view Extension Manifest',
+               headline: 'View Extension Manifest',
                language: 'json'
             }
         });

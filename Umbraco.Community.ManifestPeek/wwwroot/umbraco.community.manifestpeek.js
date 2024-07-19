@@ -4,7 +4,7 @@ const e = [
     kind: "default",
     alias: "Umb.Community.ManifestPeek.EntityAction",
     name: "Umbraco Community ManifestPeek EntityAction",
-    api: () => import("./manifestpeek.entityaction-CIZsvaxk.js"),
+    api: () => import("./manifestpeek.entityaction-D2rPmazt.js"),
     forEntityTypes: ["extension"],
     weight: 1e3,
     meta: {
