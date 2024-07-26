@@ -1,7 +1,8 @@
 import { UmbControllerHost } from "@umbraco-cms/backoffice/controller-api";
 import { UmbEntityActionArgs, UmbEntityActionBase } from "@umbraco-cms/backoffice/entity-action";
 import { UmbBackofficeExtensionRegistry, umbExtensionsRegistry } from '@umbraco-cms/backoffice/extension-registry';
-import { UMB_CODE_EDITOR_MODAL, UMB_MODAL_MANAGER_CONTEXT, UmbModalManagerContext } from "@umbraco-cms/backoffice/modal";
+import { UMB_MODAL_MANAGER_CONTEXT, UmbModalManagerContext } from "@umbraco-cms/backoffice/modal";
+import { MANIFEST_PEEK_MODAL } from "../Modal/manifestpeek.modal.token";
 
 export class ManifestPeekEntityAction extends UmbEntityActionBase<never> {
 
@@ -20,28 +21,9 @@ export class ManifestPeekEntityAction extends UmbEntityActionBase<never> {
     }
 
     async execute() {
-        console.log('args', this.args);
-
         const extension = this._extensionRegistry.getByAlias(this.args.unique ?? '');
-        console.log('extension', extension); 
-
-        const modal = this._modalManagerContext?.open(this, UMB_CODE_EDITOR_MODAL, {
-            modal: {
-                size: "medium",
-                type: "sidebar"
-            },
-            data: {
-               content: JSON.stringify(extension, null, 4),
-               headline: 'View Extension Manifest',
-               language: 'json'
-            }
-        });
-
-        // This works as we don;t know what the manifest strongly typed object is we will need to pass this to a modal
-        // And then for each property on the object list it out
-        // Some could be objects so we would need to recurse
-
-        // Could use JSON string and print that out in the modal in some <code> block or something
+        const extensionJsonString = JSON.stringify(extension, null, 4);
+        this._modalManagerContext?.open(this, MANIFEST_PEEK_MODAL, { data: { manifestJson: extensionJsonString }});
     }
 }
 
