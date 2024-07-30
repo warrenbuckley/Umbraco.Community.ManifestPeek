@@ -1,0 +1,22 @@
+{
+    "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
+    "Title": "Manifest Peek",
+    "Tags": [ "View Manifest", "Manifest JSON", "Extension Manifest", "Debug", "Debugging"],
+    "AuthorDetails": {
+        "Name": "Warren Buckley",
+        "Url": "https://hackmakedo.com",
+        "Description": "Warren is a freelance Umbraco developer who loves to tinker and hack and is available for hire. He has been working with Umbraco since the days of the yahoo mailing list (aka way too long).",
+        "ImageUrl": "https://hackmakedo.com/images/warren_square.jpg",
+        "SyncContributorsFromRepository": true
+    },
+    "PackageType": "Package",
+    "Category": "Developer Tools",
+    "LicenseTypes": ["Free"],
+    "Screenshots": [
+        {
+            "Caption": "View Umbraco Extension Manifest JSON",
+            "ImageUrl": "https://raw.githubusercontent.com/warrenbuckley/Umbraco.Community.ManifestPeek/main/.github/images/umbraco-view-extension-manifest-json.png"
+        }
+    ]
+
+}
