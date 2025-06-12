@@ -8,7 +8,7 @@ export const manifest: Array<ManifestEntityAction> = [
 		name: 'Umbraco Community ManifestPeek EntityAction',
 		api: () => import('./manifestpeek.entityaction'),
 		forEntityTypes: ['extension'],
-        weight: 1000,
+        weight: 999,
 		meta: {
 			label: 'View Manifest',
             icon: 'icon-code'
