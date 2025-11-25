@@ -9,14 +9,35 @@
   <PropertyGroup>
     <PackageId>Umbraco.Community.ManifestPeek</PackageId>
     <Product>Umbraco.Community.ManifestPeek</Product>
-    <Title>Umbraco.Community.ManifestPeek</Title>
-    <Description>...</Description>
-    <PackageTags>umbraco plugin package</PackageTags>
+    <Title>Umbraco Community ManifestPeek</Title>
+    <Description>A small utility to view and peek at an Umbraco backoffice extension type manifest configuration file</Description>
+    <PackageTags>umbraco;umbraco-marketplace;</PackageTags>
+    <PackageProjectUrl>https://github.com/warrenbuckley/Umbraco.Community.ManifestPeek</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/warrenbuckley/Umbraco.Community.ManifestPeek</RepositoryUrl>
+    <Copyright>Warren Buckley</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIcon>Umbraco.Community.ManifestPeek.png</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\Umbraco.Community.ManifestPeek.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 
   <ItemGroup>
-    <PackageReference Include="Umbraco.Cms.Web.Website" Version="14.1.0" />
-    <PackageReference Include="Umbraco.Cms.Web.Common" Version="14.1.0" />
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="17.0.0-rc4" />
+    <PackageReference Include="Umbraco.Cms.Web.Common" Version="17.0.0-rc4" />
   </ItemGroup>
 </Project>
