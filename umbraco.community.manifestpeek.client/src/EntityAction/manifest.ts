@@ -1,4 +1,4 @@
-import { ManifestEntityAction } from "@umbraco-cms/backoffice/extension-registry";
+import { ManifestEntityAction } from "@umbraco-cms/backoffice/entity-action";
 
 export const manifest: Array<ManifestEntityAction> = [
 	{
