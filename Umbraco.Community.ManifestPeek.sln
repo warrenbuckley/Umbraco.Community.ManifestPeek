@@ -3,26 +3,38 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Community.ManifestPeek.Website", "Umbraco.Community.ManifestPeek.Website\Umbraco.Community.ManifestPeek.Website.csproj", "{81A32919-2DF0-474F-8F1C-0C8922565147}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Community.ManifestPeek", "Umbraco.Community.ManifestPeek\Umbraco.Community.ManifestPeek.csproj", "{E5631F29-38C7-49BE-86EC-20F6DD2EB4C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+		umbraco-marketplace.json = umbraco-marketplace.json
+		Umbraco.Community.ManifestPeek.png = Umbraco.Community.ManifestPeek.png
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Community.ManifestPeek.Website", "Umbraco.Community.ManifestPeek.Website\Umbraco.Community.ManifestPeek.Website.csproj", "{3008DB9A-3CDA-137B-6B48-5F08FCD06E12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{81A32919-2DF0-474F-8F1C-0C8922565147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{81A32919-2DF0-474F-8F1C-0C8922565147}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{81A32919-2DF0-474F-8F1C-0C8922565147}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{81A32919-2DF0-474F-8F1C-0C8922565147}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E5631F29-38C7-49BE-86EC-20F6DD2EB4C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E5631F29-38C7-49BE-86EC-20F6DD2EB4C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5631F29-38C7-49BE-86EC-20F6DD2EB4C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5631F29-38C7-49BE-86EC-20F6DD2EB4C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3008DB9A-3CDA-137B-6B48-5F08FCD06E12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3008DB9A-3CDA-137B-6B48-5F08FCD06E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3008DB9A-3CDA-137B-6B48-5F08FCD06E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3008DB9A-3CDA-137B-6B48-5F08FCD06E12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84C5D4A2-0C08-4E04-B0BB-6147CA900025}
 	EndGlobalSection
 EndGlobal

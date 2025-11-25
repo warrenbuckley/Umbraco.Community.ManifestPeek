@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Build/">
+    <File Path=".gitignore" />
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+    <File Path="umbraco-marketplace.json" />
+    <File Path="Umbraco.Community.ManifestPeek.png" />
+  </Folder>
+  <Project Path="Umbraco.Community.ManifestPeek.Website/Umbraco.Community.ManifestPeek.Website.csproj" />
+  <Project Path="Umbraco.Community.ManifestPeek/Umbraco.Community.ManifestPeek.csproj" />
+</Solution>
