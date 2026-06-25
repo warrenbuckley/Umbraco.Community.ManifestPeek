@@ -2,7 +2,7 @@
 $projectFile = "./Umbraco.Community.ManifestPeek/Umbraco.Community.ManifestPeek.csproj"
 $configuration = "Release"
 $outputDirectory = "./build.out"
-$version = "17.0.0"
+$version = "18.0.0"
 $packageJsonPath = "./Umbraco.Community.ManifestPeek/wwwroot/umbraco-package.json"
 
 # Delete all files in the output directory
